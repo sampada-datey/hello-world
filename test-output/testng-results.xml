@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-13T18:06:30 IST" name="Default Suite" finished-at="2023-12-13T18:06:30 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Default Suite -->
+  <suite started-at="2023-12-13T18:04:15 IST" name="ShieldSuite" finished-at="2023-12-13T18:06:27 IST" duration-ms="131947">
+    <groups>
+      <group name="All">
+        <method signature="AdminTestShield.SLD()[pri:3, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="SLD" class="KloudqTechnologies.tests.AdminTestShield"/>
+        <method signature="AdminTestShield.Trends()[pri:4, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="Trends" class="KloudqTechnologies.tests.AdminTestShield"/>
+        <method signature="AdminTestShield.Investigate()[pri:5, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="Investigate" class="KloudqTechnologies.tests.AdminTestShield"/>
+        <method signature="AdminTestShield.Reports()[pri:6, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="Reports" class="KloudqTechnologies.tests.AdminTestShield"/>
+      </group> <!-- All -->
+      <group name="Admin-lenzAutomation">
+        <method signature="LenzAutomationAdminTestShield.LoginLenzAutomation(java.lang.String,java.lang.String)[pri:1, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" name="LoginLenzAutomation" class="KloudqTechnologies.tests.LenzAutomationAdminTestShield"/>
+        <method signature="LenzAutomationAdminTestShield.LenzAutomationAdministrator()[pri:2, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" name="LenzAutomationAdministrator" class="KloudqTechnologies.tests.LenzAutomationAdminTestShield"/>
+      </group> <!-- Admin-lenzAutomation -->
+      <group name="All,Dashboard">
+        <method signature="AdminTestShield.Login(java.lang.String,java.lang.String)[pri:1, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="Login" class="KloudqTechnologies.tests.AdminTestShield"/>
+        <method signature="AdminTestShield.Dashboard()[pri:2, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" name="Dashboard" class="KloudqTechnologies.tests.AdminTestShield"/>
+      </group> <!-- All,Dashboard -->
+      <group name="Admin">
+        <method signature="LenzAutomationAdminTestShield.teardown()[pri:7, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" name="teardown" class="KloudqTechnologies.tests.LenzAutomationAdminTestShield"/>
+      </group> <!-- Admin -->
+    </groups>
+    <test started-at="2023-12-13T18:04:15 IST" name="Shield Sanity" finished-at="2023-12-13T18:06:22 IST" duration-ms="126771">
+      <class name="KloudqTechnologies.tests.AdminTestShield">
+        <test-method is-config="true" signature="ToSetUPTest(java.lang.String)[pri:0, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:04:15 IST" name="ToSetUPTest" finished-at="2023-12-13T18:04:15 IST" duration-ms="36" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[All]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToSetUPTest -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:1, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:04:15 IST" name="Login" finished-at="2023-12-13T18:04:43 IST" duration-ms="28284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shield]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lenzadmin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Dashboard()[pri:2, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:04:43 IST" name="Dashboard" finished-at="2023-12-13T18:05:59 IST" duration-ms="76048" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //div[@id=\"DemandMain\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id=\"DemandMain\"]' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=xpath, value=//div[@id=\"DemandMain\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@id=\"DemandMain\"] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@id=\"DemandMain\"]' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=xpath, value=//div[@id=\"DemandMain\"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at KloudqTechnologies.PageObjects.DashboardShield.MaximumDemandMain(DashboardShield.java:3238)
+at KloudqTechnologies.tests.AdminTestShield.Dashboard(AdminTestShield.java:171)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at KloudqTechnologies.tests.Main.main(Main.java:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dashboard -->
+        <test-method signature="SLD()[pri:3, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:05:59 IST" name="SLD" finished-at="2023-12-13T18:06:08 IST" duration-ms="8118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SLD -->
+        <test-method signature="Trends()[pri:4, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:06:08 IST" name="Trends" finished-at="2023-12-13T18:06:12 IST" duration-ms="4554" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".\/\/\*\[\@id\=\"\#kt_header_menu\"\]\/div\/form\/div\/div\[1\]\/ng\-select\/div\/div\/div\[2\]\/input"}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=class name, value=//*[@id="#kt_header_menu"]/div/form/div/div[1]/ng-select/div/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".\/\/\*\[\@id\=\"\#kt_header_menu\"\]\/div\/form\/div\/div\[1\]\/ng\-select\/div\/div\/div\[2\]\/input"}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=class name, value=//*[@id="#kt_header_menu"]/div/form/div/div[1]/ng-select/div/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at KloudqTechnologies.PageObjects.Trends.Search(Trends.java:62)
+at KloudqTechnologies.tests.AdminTestShield.Trends(AdminTestShield.java:215)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at KloudqTechnologies.tests.Main.main(Main.java:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Trends -->
+        <test-method signature="Investigate()[pri:5, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:06:12 IST" name="Investigate" finished-at="2023-12-13T18:06:17 IST" duration-ms="5001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Investigate -->
+        <test-method signature="Reports()[pri:6, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:06:17 IST" name="Reports" finished-at="2023-12-13T18:06:20 IST" duration-ms="2990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reports -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:KloudqTechnologies.tests.AdminTestShield@3c9754d8]" started-at="2023-12-13T18:06:20 IST" name="teardown" finished-at="2023-12-13T18:06:22 IST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- KloudqTechnologies.tests.AdminTestShield -->
+    </test> <!-- Shield Sanity -->
+    <test started-at="2023-12-13T18:06:22 IST" name="Lenz Automation Regression" finished-at="2023-12-13T18:06:27 IST" duration-ms="5017">
+      <class name="KloudqTechnologies.tests.LenzAutomationAdminTestShield">
+        <test-method signature="LoginLenzAutomation(java.lang.String,java.lang.String)[pri:1, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" started-at="2023-12-13T18:06:22 IST" name="LoginLenzAutomation" finished-at="2023-12-13T18:06:22 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'companyName' is required by @Test on method LoginLenzAutomation but has not been marked @Optional or defined
+in C:\Users\sampadad\Desktop\MainFolder\TestingFrameworkForAll\testSuits\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'companyName' is required by @Test on method LoginLenzAutomation but has not been marked @Optional or defined
+in C:\Users\sampadad\Desktop\MainFolder\TestingFrameworkForAll\testSuits\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at KloudqTechnologies.tests.Main.main(Main.java:44)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginLenzAutomation -->
+        <test-method signature="LenzAutomationAdministrator()[pri:2, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" started-at="2023-12-13T18:06:22 IST" name="LenzAutomationAdministrator" finished-at="2023-12-13T18:06:27 IST" duration-ms="5001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LenzAutomationAdministrator -->
+        <test-method signature="teardown()[pri:7, instance:KloudqTechnologies.tests.LenzAutomationAdminTestShield@385e9564]" started-at="2023-12-13T18:06:27 IST" name="teardown" finished-at="2023-12-13T18:06:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- KloudqTechnologies.tests.LenzAutomationAdminTestShield -->
+    </test> <!-- Lenz Automation Regression -->
+  </suite> <!-- ShieldSuite -->
+</testng-results>

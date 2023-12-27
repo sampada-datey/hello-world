@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default Suite</th></tr>
+<tr><th colspan="8">ShieldSuite</th></tr>
+<tr><td><a href="#t0">Shield Sanity</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">126,771</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Lenz Automation Regression</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,017</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">131,788</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody><tr><th colspan="4">ShieldSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Shield Sanity &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">KloudqTechnologies.tests.AdminTestShield</td><td><a href="#m0">Dashboard</a></td><td rowspan="1">1702470883938</td><td rowspan="1">76048</td></tr><tr class="failedeven"><td><a href="#m1">Trends</a></td><td rowspan="1">1702470968107</td><td rowspan="1">4554</td></tr><tr><th colspan="4">Shield Sanity &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">KloudqTechnologies.tests.AdminTestShield</td><td><a href="#m2">Investigate</a></td><td rowspan="1">1702470972662</td><td rowspan="1">5001</td></tr><tr class="passedeven"><td><a href="#m3">Login</a></td><td rowspan="1">1702470855605</td><td rowspan="1">28284</td></tr><tr class="passedeven"><td><a href="#m4">Reports</a></td><td rowspan="1">1702470977664</td><td rowspan="1">2990</td></tr><tr class="passedeven"><td><a href="#m5">SLD</a></td><td rowspan="1">1702470959988</td><td rowspan="1">8118</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Lenz Automation Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">KloudqTechnologies.tests.LenzAutomationAdminTestShield</td><td><a href="#m6">LoginLenzAutomation</a></td><td rowspan="1">1702470982423</td><td rowspan="1">0</td></tr><tr><th colspan="4">Lenz Automation Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">KloudqTechnologies.tests.LenzAutomationAdminTestShield</td><td><a href="#m7">LenzAutomationAdministrator</a></td><td rowspan="1">1702470982424</td><td rowspan="1">5001</td></tr><tr class="passedeven"><td><a href="#m8">teardown</a></td><td rowspan="1">1702470987427</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Shield Sanity</h2><h3 id="m0">KloudqTechnologies.tests.AdminTestShield#Dashboard</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[@id=\&quot;DemandMain\&quot;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[@id=\&quot;DemandMain\&quot;]&apos; is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=xpath, value=//div[@id=\&quot;DemandMain\&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at KloudqTechnologies.PageObjects.DashboardShield.MaximumDemandMain(DashboardShield.java:3238)
+	at KloudqTechnologies.tests.AdminTestShield.Dashboard(AdminTestShield.java:171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at KloudqTechnologies.tests.Main.main(Main.java:44)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">KloudqTechnologies.tests.AdminTestShield#Trends</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.\/\/\*\[\@id\=\&quot;\#kt_header_menu\&quot;\]\/div\/form\/div\/div\[1\]\/ng\-select\/div\/div\/div\[2\]\/input&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53f9aaee250d89426634c57a8492243c, findElement {using=class name, value=//*[@id=&quot;#kt_header_menu&quot;]/div/form/div/div[1]/ng-select/div/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\sampadad\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52590}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52590/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53f9aaee250d89426634c57a8492243c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at KloudqTechnologies.PageObjects.Trends.Search(Trends.java:62)
+	at KloudqTechnologies.tests.AdminTestShield.Trends(AdminTestShield.java:215)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at KloudqTechnologies.tests.Main.main(Main.java:44)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">KloudqTechnologies.tests.AdminTestShield#Investigate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">KloudqTechnologies.tests.AdminTestShield#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Shield</td><td>lenzadmin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">KloudqTechnologies.tests.AdminTestShield#Reports</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">KloudqTechnologies.tests.AdminTestShield#SLD</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Lenz Automation Regression</h2><h3 id="m6">KloudqTechnologies.tests.LenzAutomationAdminTestShield#LoginLenzAutomation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;companyName&apos; is required by @Test on method LoginLenzAutomation but has not been marked @Optional or defined
+in C:\Users\sampadad\Desktop\MainFolder\TestingFrameworkForAll\testSuits\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at KloudqTechnologies.tests.Main.main(Main.java:44)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">KloudqTechnologies.tests.LenzAutomationAdminTestShield#LenzAutomationAdministrator</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">KloudqTechnologies.tests.LenzAutomationAdminTestShield#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
