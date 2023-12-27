@@ -52,7 +52,7 @@ public class AbstractComponent {
 
 	public  String password;
 
-	@BeforeSuite
+	
 
 	public void setExtentReport() {
 		ExtentHtmlReporter extent =new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/ShieldTest1.html"));
