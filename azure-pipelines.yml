@@ -27,6 +27,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports' 
+    pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports/dashboard.html' 
     artifactName: 'UpdatedExtentReport' 
     publishLocation: 'Container'
