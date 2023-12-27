@@ -27,13 +27,7 @@ import KloudqTechnologies.TestComponents.BaseTest;
 public class LoginTestExcel  extends BaseTest {
 
 	@DataProvider(name="loginData")
-	public void setExtentReport()
-	{
-//		ExtentHtmlReporter extent =new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/ShieldTest1.html"));
-//		this.report=new ExtentReports();
-//		report.attachReporter(extent);
-
-	}
+	
 
 	public static String[][] getData(ExtentReports report) throws IOException, InterruptedException 
 	{
