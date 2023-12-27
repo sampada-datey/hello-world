@@ -20,13 +20,13 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- script: |
-    # Run your tests and generate the Extent report
-    mvn test
-    # Replace the above line with commands to generate the Extent report
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean test -DsuiteXmlFile=testSuits/testng.xml'
 
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports' 
-    artifactName: 'ExtentReports' 
+    artifactName: 'UpdatedExtentReport' 
     publishLocation: 'Container'
