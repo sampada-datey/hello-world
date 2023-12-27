@@ -30,7 +30,7 @@ steps:
     mvn test
     
     # Run your script to generate/update the HTML file based on the test results
-    ./generate_html_script.sh
+    /full/path/to/generate_html_script.sh
 
 - task: PublishBuildArtifacts@1
   inputs:
