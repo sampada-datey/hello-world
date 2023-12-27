@@ -26,11 +26,13 @@ steps:
     goals: 'clean test -DsuiteXmlFile=testSuits/testng.xml'
   
 - script: |
-   
-    mvn test
+    # Run your tests using testng.xml
+    mvn test -DsuiteXmlFile=path/to/your/testng.xml
     
-    # Run your script to generate/update the HTML file based on the test results
-    /Reports/generate_html_script.sh
+    # Run the script to update all files within the 'reports' folder
+    chmod +x update_reports.sh  # Ensure script has execute permissions
+    ./update_reports.sh Reports
+  displayName: 'Run Tests and Update Reports'
 
 - task: PublishBuildArtifacts@1
   inputs:
