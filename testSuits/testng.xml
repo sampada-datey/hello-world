@@ -18,7 +18,9 @@
 
 
 	<test name="Lenz Automation Regression">
-		
+		<parameter name="companyName" value="Shield" />
+		<parameter name="userType" value="lenzadmin" />
+		<parameter name="groupNames" value="AdminlenzAutomation" />
 		<classes>	
 			<class name="KloudqTechnologies.tests.LenzAutomationAdminTestShield" />
 		</classes>
