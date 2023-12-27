@@ -24,9 +24,16 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean test -DsuiteXmlFile=testSuits/testng.xml'
+  
+- script: |
+   
+    mvn test
+    
+    # Run your script to generate/update the HTML file based on the test results
+    ./generate_html_script.sh
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports/dashboard.html' 
+    pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports' 
     artifactName: 'UpdatedExtentReport' 
     publishLocation: 'Container'
