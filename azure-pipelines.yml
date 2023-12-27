@@ -39,3 +39,4 @@ steps:
     pathtoPublish: '$(System.DefaultWorkingDirectory)/Reports' 
     artifactName: 'UpdatedExtentReport' 
     publishLocation: 'Container'
+    TargetPath: 'Reports'
