@@ -27,7 +27,7 @@ steps:
   
 - script: |
     # Run your tests using testng.xml
-    mvn test -DsuiteXmlFile=path/to/your/testng.xml
+    mvn test -DsuiteXmlFile=testSuits/testng.xml
     
     # Run the script to update all files within the 'reports' folder
     chmod +x update_reports.sh  # Ensure script has execute permissions
